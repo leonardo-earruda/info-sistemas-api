@@ -5,7 +5,7 @@
       
 2. Rode o comando `npm-install` no diretório "servidor" e no diretório "front-end"
 
-3. Para rodar o servidor, é preciso subir a imagem do docker. Rode `docker-compose up` -d no diretório "servidor".
+3. Para rodar o servidor, é preciso subir a imagem do docker. Rode `docker-compose up -d` no diretório "servidor".
 
 4. Rode o comando `ng serve` no diretório "front-end".
 
