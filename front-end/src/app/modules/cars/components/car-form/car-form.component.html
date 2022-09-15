@@ -1,0 +1,62 @@
+<h1>{{ this.isEditing ? "Editar" : "Cadastrar" }} carro</h1>
+<form [formGroup]="carForm">
+  <div fxLayoutGap="10px">
+    <mat-form-field appearance="outline">
+      <mat-label>Placa</mat-label>
+      <input
+        formControlName="placa"
+        matInput
+        placeholder="Insira o número da placa"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Chassi</mat-label>
+      <input
+        formControlName="chassi"
+        matInput
+        placeholder="Insira o número do chassi"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Renavam</mat-label>
+      <input
+        formControlName="renavam"
+        matInput
+        placeholder="Insira o número do renavam"
+      />
+    </mat-form-field>
+  </div>
+
+  <div fxLayoutGap="10px">
+    <mat-form-field id="modelo-field" appearance="outline">
+      <mat-label>Modelo</mat-label>
+      <input
+        formControlName="modelo"
+        matInput
+        placeholder="Insira o nome do modelo"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Marca</mat-label>
+      <input
+        formControlName="marca"
+        matInput
+        placeholder="Insira o nome da marca"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Ano</mat-label>
+      <input formControlName="ano" matInput placeholder="Insira o ano" />
+    </mat-form-field>
+  </div>
+  <div fxLayoutAlign="end end" fxLayoutGap="10px">
+    <button mat-raised-button color="warn">Cancelar</button>
+    <button mat-raised-button color="primary" id="create-button" (click)="save()">
+      {{ this.isEditing ? "Confirmar" : "Cadastrar" }}
+    </button>
+  </div>
+</form>
