@@ -11,9 +11,9 @@
 
 5. Rode o comando `yarn dev` no diretório "server".
 
-6. Navegue para o servidor de desenvolvimento local `localhost:4200`
-
 
 ## Rodando os testes: 
 
 1. Para rodar os testes do cypress, vá até o diretório "front-end" e rode o comando `npx cypres open`. Após isso, abra a classe `cars.cy.ts`.
+
+2. Para rodar os testes do back-end, importe essa collection do postman https://www.postman.com/collections/0e203d2ac2b042ef6315
