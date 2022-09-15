@@ -11,6 +11,7 @@
 
 5. Rode o comando `yarn dev` no diretório "server".
 
+6. Navegue até localhost:4200/carros/modelos
 
 ## Rodando os testes: 
 
